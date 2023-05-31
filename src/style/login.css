@@ -1,0 +1,102 @@
+body {
+    background: #0e2045;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-wrapper {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 500px;
+    width: 500px;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Form Input Styling */
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+/* .xl{
+    font-size:25px;
+} */
+
+.title h1 {
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+::placeholder {
+    color: #e5e5e5;
+}
+
+.button {
+    background-color: #ffff;
+    color: #080710;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Form Input Styling */
+
+.animations:nth-child(2) {
+    position: fixed;
+    z-index: -1;
+    top: 20%;
+    right: 5%;
+}
+.animations:nth-child(3) {
+    position: fixed;
+    z-index: -1;
+    top: 20%;
+    left: 5%;
+}
+
+@media screen and (max-width: 780px) {
+    .animations:nth-child(2) {
+        display: none;
+    }
+    .animations:nth-child(3) {
+        position: fixed;
+        z-index: -1;
+        top: 7%;
+        left: 13%;
+    }
+    .box-wrapper {
+        height: 300px;
+        width: 300px;
+    }
+}

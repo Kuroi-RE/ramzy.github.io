@@ -1,0 +1,102 @@
+
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#why-ram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 70px;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.company-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: inherit;
+    overflow: hidden;
+}
+
+.title-wrapper h1 {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 46px;
+}
+
+.btn-wrapper {
+    padding-top: 10px;
+}
+.btn-wrapper a {
+    padding: 8px;
+    color: inherit;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: salmon;
+}
+
+
+.choose h1 {
+    font-size: 40px;
+}
+
+.choose p {
+    font-size: 24px;
+}
+
+#why-ram > p {
+    font-size: 23px;
+}
+
+#why-ram .daftar-btn {
+    padding: 12px 19px; 
+    border: none;
+    cursor: pointer;
+    background-color: aqua;
+
+}
+
+.daftar-btn:hover {
+    /* background-color: salmon; */
+    color: white;
+}
+
+/* Slides Image */
+
+.company-img {
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 7s;
+  }
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+/* Slides Image */
+
+@media screen and (max-width: 780px) {
+    .company {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .company-title {
+        margin-left: 19px;
+    }
+}

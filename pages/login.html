@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/globals.css">
+    <link rel="stylesheet" href="../src/style/login.css">
+    <link rel="stylesheet" href="../src/assets/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Login Page -->
+    <header>
+        <nav>
+            <div class="nav-item"><a href=""><i class="fa-solid fa-location-dot"></i></a></div>
+            <div class="nav-item"><a href="#">Login</a></div>
+            <div class="nav-item"><a href="./register.html">Register</a></div>
+        </nav>
+    </header>
+
+    <!-- Start -->
+    <section id="login">
+        <div class="box-container">
+            <div class="box-wrapper">
+                <form class="form" id="form" method="get">
+                    <div class="title">
+                        <h1>LOGIN</h1>
+                    </div>
+                    <div class="form-item">     
+                       <!-- <div>
+                        <i class="xl fa-regular fa-envelope"></i>
+                        <span>Email</span>    
+                       </div>              -->
+                       <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-item">
+                        <!-- <div>
+                            <i class="xl fa-solid fa-unlock"></i>
+                            <span>Password</span>
+                        </div> -->
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+                    <!-- <div class="form-check">
+                        <input type="checkbox" name="check" id="check" required> 
+                        <span>saya setuju dengan persyaratan yang sudah ditentukan.</span>
+                    </div> -->
+                    <input type="submit" class="button" value="Submit">
+                    <a href="./register.html">SignUp</a>
+               </form>
+            </div>
+            <div class="animations"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_sop8cbmc.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player></div>
+            <div class="animations"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_jcikwtux.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player></div>
+        </div>
+    </section>
+    
+    <!-- End -->
+    <footer>
+        <div class="footer-item">
+            <div class="company-title">
+                <h3>Ram Groub</h3>
+                <p>Parents of Ram Bank</p>
+            </div>
+            <div class="company-about">
+                <h3>About us</h3>
+                <div class="company-sosial">
+                    <i class="fa-brands fa-facebook"></i>
+                    Ram Groub Official
+                </div>
+                <div class="company-sosial">
+                    <i class="fa-brands fa-instagram"></i>
+                    @ram_groub
+                </div>
+                <div class="company-sosial">
+                    <i class="fa-brands fa-twitter"></i>
+                    @ram_groub
+                </div>
+                <div class="company-sosial">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +62 888 888 888 888
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <i class="fa fa-copyright"></i> 2023 design by Ram
+        </div>
+    </footer>
+    <script src="../src/script/validation.js"></script>
+    <script src="../src/assets/js/all.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
